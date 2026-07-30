@@ -1,0 +1,43 @@
+<div class="container">
+
+  <h2>Course List</h2>
+
+  <table>
+
+    <tr>
+      <th>ID</th>
+      <th>Course</th>
+      <th>Code</th>
+      <th>Credits</th>
+      <th>Status</th>
+    </tr>
+
+    <tr *ngFor="let course of courses">
+
+      <td>{{course.id}}</td>
+      <td>
+        <a [routerLink]="['/courses', course.id]">
+          {{ course.name }}
+        </a>
+
+        <br><br>
+
+        <button
+          [routerLink]="['/profile']"
+          [queryParams]="{
+            student:'Chethan',
+            course:course.name
+          }">
+            View Student
+        </button>
+
+      </td>
+      <td>{{course.code}}</td>
+      <td>{{course.credits}}</td>
+      <td>{{course.gradeStatus}}</td>
+
+    </tr>
+
+  </table>
+
+</div>

@@ -1,0 +1,23 @@
+.container{
+    text-align:center;
+    margin-top:50px;
+    font-family:Arial;
+}
+
+h1{
+    color:#dd0031;
+}
+
+.card{
+    width:300px;
+    margin:auto;
+    padding:20px;
+    border-radius:10px;
+    background:#f5f5f5;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+
+p{
+    font-size:30px;
+    font-weight:bold;
+}

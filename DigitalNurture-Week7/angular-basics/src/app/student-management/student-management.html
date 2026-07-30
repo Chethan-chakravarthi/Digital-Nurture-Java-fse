@@ -1,0 +1,62 @@
+<h1>Student Management System</h1>
+
+<hr>
+
+<input
+  placeholder="Search Student"
+  [(ngModel)]="searchText">
+
+<br><br>
+
+<input
+  placeholder="ID"
+  [(ngModel)]="student.id">
+
+<br><br>
+
+<input
+  placeholder="Name"
+  [(ngModel)]="student.name">
+
+<br><br>
+
+<input
+  placeholder="Course"
+  [(ngModel)]="student.course">
+
+<br><br>
+
+<input
+  placeholder="Email"
+  [(ngModel)]="student.email">
+
+<br><br>
+
+<button (click)="addOrUpdateStudent()">
+  {{ editIndex == -1 ? 'Add Student' : 'Update Student' }}
+</button>
+
+<hr>
+
+<table border="1" cellpadding="10">
+
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Course</th>
+    <th>Email</th>
+    <th>Actions</th>
+  </tr>
+
+  <tr *ngFor="let s of filteredStudents; let i=index">
+    <td>{{s.id}}</td>
+    <td>{{s.name}}</td>
+    <td>{{s.course}}</td>
+    <td>{{s.email}}</td>
+    <td>
+      <button (click)="editStudent(students.indexOf(s))">Edit</button>
+      <button (click)="deleteStudent(students.indexOf(s))">Delete</button>
+    </td>
+  </tr>
+
+</table>

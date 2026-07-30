@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events</title>
+
+    <style>
+
+        body{
+            font-family:Arial,sans-serif;
+            text-align:center;
+            background:#f4f6f9;
+            margin-top:50px;
+        }
+
+        h1{
+            color:#e34c26;
+        }
+
+        #message{
+
+            font-size:22px;
+            margin:25px;
+            color:#444;
+
+        }
+
+        button{
+
+            padding:12px 25px;
+            background:#4CAF50;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+
+        }
+
+        input{
+
+            margin-top:20px;
+            padding:10px;
+            width:250px;
+            font-size:16px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>JavaScript Events</h1>
+
+<p id="message">
+Interact with the elements below.
+</p>
+
+<button onclick="buttonClicked()">
+Click Me
+</button>
+
+<br><br>
+
+<input
+type="text"
+placeholder="Type your name..."
+onkeyup="showText(this.value)">
+
+<br><br>
+
+<div
+onmouseover="mouseOver()"
+onmouseout="mouseOut()"
+style="
+width:250px;
+margin:auto;
+padding:20px;
+background:#2196F3;
+color:white;
+border-radius:10px;
+cursor:pointer;">
+
+Move Mouse Here
+
+</div>
+
+<script src="events.js"></script>
+
+</body>
+</html>

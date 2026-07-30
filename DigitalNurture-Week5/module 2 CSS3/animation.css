@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:100vh;
+}
+
+h1{
+    color:#e34c26;
+    margin-bottom:40px;
+}
+
+.container{
+    text-align:center;
+}
+
+.box{
+    width:180px;
+    height:180px;
+    background:#4CAF50;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    border-radius:15px;
+    transition:0.5s;
+}
+
+/* Hover Effect */
+.box:hover{
+    background:#ff5722;
+    transform:rotate(10deg) scale(1.15);
+}
+
+/* Button */
+button{
+    margin-top:40px;
+    padding:12px 25px;
+    border:none;
+    background:#2196F3;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+button:hover{
+    background:#1565C0;
+    transform:translateY(-5px);
+}
+
+/* Animation */
+.box{
+    animation:float 2s infinite alternate;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0px);
+    }
+
+    to{
+        transform:translateY(-20px);
+    }
+}

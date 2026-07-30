@@ -1,0 +1,12 @@
+<div class="parent">
+  <h1>Parent Component</h1>
+  <h2>Student : {{name}}</h2>
+
+  <app-child
+    [studentName]="name"
+    (sendMessage)="receiveMessage($event)">
+  </app-child>
+
+  <hr>
+  <h3>{{message}}</h3>
+</div>

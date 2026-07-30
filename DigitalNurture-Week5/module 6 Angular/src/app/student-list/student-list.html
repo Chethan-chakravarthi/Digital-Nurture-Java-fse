@@ -1,0 +1,33 @@
+<div class="container">
+
+<h1>Student List</h1>
+
+<div *ngIf="loading$ | async">
+    Loading...
+</div>
+
+<div *ngIf="error$ | async as error">
+    {{ error }}
+</div>
+
+<table *ngIf="!(loading$ | async) && !(error$ | async)">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Username</th>
+<th>Email</th>
+</tr>
+
+<tr *ngFor="let student of (students$ | async)">
+
+<td>{{student.id}}</td>
+<td>{{student.name}}</td>
+<td>{{student.username}}</td>
+<td>{{student.email}}</td>
+
+</tr>
+
+</table>
+
+</div>

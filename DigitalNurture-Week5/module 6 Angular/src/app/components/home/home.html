@@ -1,0 +1,29 @@
+<div class="container">
+
+<h1>Student Dashboard</h1>
+
+<div class="cards">
+
+<app-course-summary
+title="Total Courses"
+[value]="getTotalCourses()">
+</app-course-summary>
+
+<app-course-summary
+title="Passed"
+[value]="getPassedCourses()">
+</app-course-summary>
+
+<app-course-summary
+title="Pending"
+[value]="getPendingCourses()">
+</app-course-summary>
+
+<app-course-summary
+title="Failed"
+[value]="getFailedCourses()">
+</app-course-summary>
+
+</div>
+
+</div>

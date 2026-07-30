@@ -1,0 +1,19 @@
+<div class="container">
+
+    <h1>Course Details</h1>
+
+    <h2>Course ID : {{ courseId }}</h2>
+
+    <br>
+
+    <a [routerLink]="['overview']">Overview</a>
+
+    |
+
+    <a [routerLink]="['syllabus']">Syllabus</a>
+
+    <hr>
+
+    <router-outlet></router-outlet>
+
+</div>

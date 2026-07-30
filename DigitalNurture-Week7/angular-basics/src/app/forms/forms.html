@@ -1,0 +1,39 @@
+<h1>Angular Forms Demo</h1>
+
+<form (ngSubmit)="submitForm()">
+  <label>Name</label><br>
+  <input
+    type="text"
+    name="name"
+    [(ngModel)]="student.name"
+    required>
+
+  <br><br>
+
+  <label>Email</label><br>
+  <input
+    type="email"
+    name="email"
+    [(ngModel)]="student.email"
+    required>
+
+  <br><br>
+
+  <label>Course</label><br>
+  <input
+    type="text"
+    name="course"
+    [(ngModel)]="student.course">
+
+  <br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<hr>
+
+<h2>Entered Details</h2>
+
+<p>Name : {{student.name}}</p>
+<p>Email : {{student.email}}</p>
+<p>Course : {{student.course}}</p>

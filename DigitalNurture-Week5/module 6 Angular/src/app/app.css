@@ -1,0 +1,31 @@
+.container{
+
+    width:700px;
+
+    margin:auto;
+
+    margin-top:50px;
+
+    text-align:center;
+
+    font-family:Arial;
+
+}
+
+h1{
+
+    color:#dd0031;
+
+}
+
+p{
+
+    font-size:18px;
+
+    margin:20px;
+
+    transition:0.3s;
+
+    cursor:pointer;
+
+}

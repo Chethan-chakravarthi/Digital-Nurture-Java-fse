@@ -1,0 +1,42 @@
+<h1>Student CRUD Application</h1>
+
+<hr>
+
+<label>ID</label><br>
+<input [(ngModel)]="student.id">
+
+<br><br>
+
+<label>Name</label><br>
+<input [(ngModel)]="student.name">
+
+<br><br>
+
+<label>Course</label><br>
+<input [(ngModel)]="student.course">
+
+<br><br>
+
+<button (click)="addStudent()">Add Student</button>
+
+<hr>
+
+<table border="1" cellpadding="8">
+
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Course</th>
+  <th>Action</th>
+</tr>
+
+<tr *ngFor="let s of students; let i=index">
+  <td>{{s.id}}</td>
+  <td>{{s.name}}</td>
+  <td>{{s.course}}</td>
+  <td>
+    <button (click)="deleteStudent(i)">Delete</button>
+  </td>
+</tr>
+
+</table>

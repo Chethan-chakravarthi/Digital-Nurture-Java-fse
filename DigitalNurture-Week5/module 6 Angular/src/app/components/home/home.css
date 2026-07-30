@@ -1,0 +1,25 @@
+.container{
+
+    text-align:center;
+
+    font-family:Arial;
+
+    margin-top:40px;
+
+}
+
+h1{
+
+    color:#dd0031;
+
+}
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}

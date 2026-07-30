@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dept1" class="com.chethan.springrest.model.Department">
+        <property name="id" value="1"/>
+        <property name="name" value="Engineering"/>
+    </bean>
+
+    <bean id="dept2" class="com.chethan.springrest.model.Department">
+        <property name="id" value="2"/>
+        <property name="name" value="Human Resources"/>
+    </bean>
+
+    <bean id="dept3" class="com.chethan.springrest.model.Department">
+        <property name="id" value="3"/>
+        <property name="name" value="Finance"/>
+    </bean>
+
+    <bean id="skillJava" class="com.chethan.springrest.model.Skill">
+        <property name="id" value="1"/>
+        <property name="name" value="Java"/>
+    </bean>
+
+    <bean id="skillSpring" class="com.chethan.springrest.model.Skill">
+        <property name="id" value="2"/>
+        <property name="name" value="Spring Boot"/>
+    </bean>
+
+    <bean id="skillAngular" class="com.chethan.springrest.model.Skill">
+        <property name="id" value="3"/>
+        <property name="name" value="Angular"/>
+    </bean>
+
+    <bean id="skillSQL" class="com.chethan.springrest.model.Skill">
+        <property name="id" value="4"/>
+        <property name="name" value="SQL"/>
+    </bean>
+
+    <bean id="emp1" class="com.chethan.springrest.model.Employee">
+        <property name="id" value="101"/>
+        <property name="name" value="Rahul"/>
+        <property name="salary" value="65000"/>
+        <property name="permanent" value="true"/>
+        <property name="department" ref="dept1"/>
+        <property name="skills">
+            <list>
+                <ref bean="skillJava"/>
+                <ref bean="skillSpring"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="emp2" class="com.chethan.springrest.model.Employee">
+        <property name="id" value="102"/>
+        <property name="name" value="Priya"/>
+        <property name="salary" value="55000"/>
+        <property name="permanent" value="true"/>
+        <property name="department" ref="dept2"/>
+        <property name="skills">
+            <list>
+                <ref bean="skillSQL"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="emp3" class="com.chethan.springrest.model.Employee">
+        <property name="id" value="103"/>
+        <property name="name" value="Arjun"/>
+        <property name="salary" value="70000"/>
+        <property name="permanent" value="false"/>
+        <property name="department" ref="dept1"/>
+        <property name="skills">
+            <list>
+                <ref bean="skillJava"/>
+                <ref bean="skillAngular"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="emp4" class="com.chethan.springrest.model.Employee">
+        <property name="id" value="104"/>
+        <property name="name" value="Sneha"/>
+        <property name="salary" value="60000"/>
+        <property name="permanent" value="true"/>
+        <property name="department" ref="dept3"/>
+        <property name="skills">
+            <list>
+                <ref bean="skillSpring"/>
+                <ref bean="skillSQL"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="employeeList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="emp1"/>
+                <ref bean="emp2"/>
+                <ref bean="emp3"/>
+                <ref bean="emp4"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="departmentList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="dept1"/>
+                <ref bean="dept2"/>
+                <ref bean="dept3"/>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>

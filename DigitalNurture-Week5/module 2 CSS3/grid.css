@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    color:#e34c26;
+    margin-bottom:30px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.box{
+    background:#4CAF50;
+    color:white;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+    font-size:22px;
+    transition:.3s;
+}
+
+.box:hover{
+    background:#2E7D32;
+    transform:scale(1.05);
+}

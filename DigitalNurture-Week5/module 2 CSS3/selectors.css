@@ -1,0 +1,34 @@
+/* Universal Selector */
+*{
+    margin:10px;
+    font-family:Arial, sans-serif;
+}
+
+/* Element Selector */
+p{
+    font-size:20px;
+}
+
+/* Class Selector */
+.blueText{
+    color:blue;
+    font-weight:bold;
+}
+
+/* ID Selector */
+#redText{
+    color:red;
+    font-style:italic;
+}
+
+/* Group Selector */
+h1,h2{
+    color:#e34c26;
+    text-align:center;
+}
+
+div{
+    background:#f4f4f4;
+    padding:20px;
+    border-radius:10px;
+}

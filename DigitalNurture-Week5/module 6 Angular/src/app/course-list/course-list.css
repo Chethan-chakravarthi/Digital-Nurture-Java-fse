@@ -1,0 +1,28 @@
+.container{
+    width:800px;
+    margin:auto;
+    margin-top:40px;
+    font-family:Arial;
+}
+
+h2{
+    text-align:center;
+    color:#dd0031;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#dd0031;
+    color:white;
+}

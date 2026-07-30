@@ -1,0 +1,27 @@
+<h1>Angular Data Binding Demo</h1>
+
+<hr>
+
+<h2>Interpolation</h2>
+<p>Name : {{ name }}</p>
+<p>Course : {{ course }}</p>
+
+<hr>
+
+<h2>Property Binding</h2>
+<input [value]="name">
+
+<hr>
+
+<h2>Two Way Binding</h2>
+<input [(ngModel)]="name">
+
+<p>Updated Name : {{ name }}</p>
+
+<hr>
+
+<h2>Event Binding</h2>
+
+<button (click)="increment()">Click Me</button>
+
+<p>Button Clicked : {{ count }} times</p>
