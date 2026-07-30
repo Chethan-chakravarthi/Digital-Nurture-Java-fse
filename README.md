@@ -7,179 +7,104 @@ This repository contains my hands-on exercises, assignments, and projects comple
 The repository includes week-wise implementations covering Java, Spring Framework, Spring Boot, Microservices, HTML5, CSS3, JavaScript, Bootstrap 5, Webpack, and Angular.
 ---
 
-## 📂 Repository Structure
+## 📚 Repository Structure
 
-### 📘 Week 1 – Design Principles & Patterns
-- SOLID Principles
+```
+DigitalNurture-Week1/
+DigitalNurture-Week2/
+DigitalNurture-Week3/
+DigitalNurture-Week4/
+DigitalNurture-Week5/
+DigitalNurture-Week6/
+DigitalNurture-Week7/
+```
+
+## 🚀 Technologies Used
+
+- Java
+- Spring Core
+- Spring Boot
+- Spring REST
+- Spring Security (JWT)
+- Microservices
+- Eureka Server
+- API Gateway
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+- Angular
+- React
+- Git & GitHub
+- Maven
+
+## 📖 Weekly Modules
+
+### Week 1
+- Design Principles (SOLID)
 - Design Patterns
-  - Adapter Pattern
-  - Builder Pattern
-  - Command Pattern
-  - Decorator Pattern
-  - Dependency Injection Pattern
-  - Factory Method Pattern
-  - MVC Pattern
-  - Observer Pattern
-  - Proxy Pattern
-  - Singleton Pattern
-  - Strategy Pattern
-- PL/SQL Programming
-- JUnit 5 & Mockito
-- SLF4J Logging
 
----
+### Week 2
+- Data Structures & Algorithms
+- Searching & Sorting
 
-### 📘 Week 2 – Spring Core & Maven
-- Basic Spring Application
-- Dependency Injection
-- Spring XML Configuration
-- Maven Project Setup
-- IoC Container
-- Spring Bean Configuration
-
----
-
-### 📘 Week 3 – Spring Boot & REST APIs
-- Spring Boot Fundamentals
-- REST API Development
-- Spring Data JPA
-- Hibernate ORM
-- Employee Management REST API
+### Week 3
+- Spring Core
+- Spring Boot
+- REST APIs
 - JWT Authentication
 
----
-
-### 📘 Week 4 – Microservices
-- Spring Cloud
-- Eureka Service Registry
-- Config Server
+### Week 4
+- Microservices
+- Eureka Discovery Server
 - API Gateway
-- Account Service
-- Loan Service
-- Microservices Communication
+- Account & Loan Services
 
----
+### Week 5
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- Angular Fundamentals
 
-### 📘 Week 5 – Frontend Development
-#### HTML5
-- Semantic Elements
-- Forms & Validation
-- Multimedia
-- Tables & Lists
-
-#### CSS3
-- Selectors
-- Box Model
-- Flexbox
-- Grid Layout
-- Responsive Design
-- Animations & Transitions
-
-#### JavaScript
-- Variables & Data Types
-- Functions
-- Objects & Arrays
-- DOM Manipulation
-- Events
-- ES6 Features
-- Asynchronous JavaScript
-
-#### Bootstrap 5
-- Grid System
+### Week 6
+- React Basics
+- JSX
 - Components
+- Props & State
+- Event Handling
 - Forms
-- Utilities
-- Responsive Layout
+- Routing
+- Hooks
+- API Integration
+- Student Management Project
 
-#### Webpack
-- Module Bundling
-- Asset Management
-- Development & Production Configuration
-
-#### Angular
-- Angular CLI
-- Components
+### Week 7
+- Angular Components
 - Data Binding
 - Directives
 - Services
-- Dependency Injection
 - Routing
-- Reactive Forms
-- Lifecycle Hooks
-- Pipes
-- Parent-Child Communication
-- State Management (NgRx)
-
----     
-
-## ✅ Week 6 – React
-
-### Modules Completed
-
-- Module 1 – React Basics
-- Module 2 – JSX
-- Module 3 – Components
-- Module 4 – Props & State
-- Module 5 – Event Handling
-- Module 6 – Forms
-- Module 7 – Routing
-- Module 8 – Hooks
-- Module 9 – API Integration
-- Module 10 – Final Assessment
-
-### Final Assessment Project
-
-**Student Management System**
-
-#### Features
-- Functional Components
-- JSX
-- Props
-- useState Hook
-- Event Handling
 - Forms
-- Dynamic Table Rendering
-- Component-Based Architecture
+- CRUD Operations
+- Student Management System
 
-#### Technologies Used
-- React.js
-- JavaScript (ES6)
-- HTML5
-- CSS3
-- Node.js
-- npm
+## 💻 How to Run
 
-**Status:** ✅ Week 6 Completed
+Clone the repository:
 
-## 🛠️ Technologies Used
+```bash
+git clone https://github.com/Chethan-chakravarthi/Digital-Nurture-Java-fse.git
+```
 
-- Java
-- Spring Framework
-- Spring Boot
-- Spring Cloud
-- Hibernate
-- Maven
-- JUnit 5
-- Mockito
-- PL/SQL
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- Bootstrap 5
-- Webpack
-- Angular
-- Git & GitHub
-
----
-
-## 🎯 Purpose
-
-This repository showcases my practical learning, coding exercises, and hands-on implementations completed during the Cognizant Digital Nurture 5.0 Java Full Stack Engineer training.
-
----
+Navigate to the desired week's project and follow the project-specific instructions.
 
 ## 👨‍💻 Author
 
-**Chethan Chakravarthi**
+**Chethan Chakravarthi K**
 
+- GitHub: https://github.com/Chethan-chakravarthi
+- LinkedIn: https://www.linkedin.com/in/chethan-chakravarthi-k-b16533316/
+
+---
 GitHub: https://github.com/Chethan-chakravarthi
